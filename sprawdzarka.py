@@ -16,7 +16,10 @@ for input_file in input_files:
     expected_output_path = os.path.join(output_dir, expected_output_file)
 
     temp_output_path = 'temp.txt'
-    command = f'python {program} < {input_path} > {temp_output_path}'
+
+    command = f'python3 {program} < {input_path} > {temp_output_path}'
+
+
     os.system(command)
 
     try:
